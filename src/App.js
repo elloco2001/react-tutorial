@@ -12,11 +12,29 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
+import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
 
 function App() {
   return (
     <div className="App">
-      <NameList></NameList>
+      <Table />
+      {/* <FragmentDemo /> */}
+      {/* <LifeCycleA /> */}
+      {/* <Form /> */}
+      {/* <div>
+        <Stylesheet primary={true} />
+        <Inline />
+        <h1 className="error">Error</h1>
+        <h1 className={styles.success}>Success</h1>
+      </div> */}
+      {/* <NameList></NameList> */}
       {/* <UserGreeting></UserGreeting> */}
       {/* <ParentComponent></ParentComponent> */}
       {/* <EventBind></EventBind> */}
